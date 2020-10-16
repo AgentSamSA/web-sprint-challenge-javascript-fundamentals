@@ -18,7 +18,7 @@ myFunction();
 
 // Explanation: 
 
-//nestFunction can access the variable internal because of closure. An internal or nested function has access to the parent function's scope at all times, regardless of the state of the parent function (such as after it has "closed").
+//nestFunction can access the variable internal because of closure. An internal or nested function has access to the parent function's scope at all times, regardless of the state of the parent function (such as after it has "closed", or the code has been completely passed through).
 
 /* Task 2: Counter */
 
