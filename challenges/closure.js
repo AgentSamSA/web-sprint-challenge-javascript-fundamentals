@@ -18,6 +18,7 @@ myFunction();
 
 // Explanation: 
 
+//nestFunction can access the variable internal because of closure. An internal or nested function has access to the parent function's scope at all times, regardless of the state of the parent function (such as after it has "closed").
 
 /* Task 2: Counter */
 
@@ -25,7 +26,10 @@ myFunction();
 
 function summation(num) {
   let totalSum = 0;
-for (let i = 1; i <= num; i++) {
-  totalSum += totalSum;
+  for (let i = 1; i <= num; i++) {
+    totalSum += i;
+  }
+  return totalSum;
 }
-}
+
+console.log(summation(10));
